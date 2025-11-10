@@ -29,93 +29,97 @@ h3{
     #section{
         padding: 60px 0 0 0;
         box-sizing: border-box;
-        .lnb{
-            display: flex;
-            align-items: center;
-            gap: 0 24px;
-            padding: 30px 20px 0;
+        .subTop{
+            border-bottom: 1px solid #DDDDDD;
             box-sizing: border-box;
-            >li{
-                position: relative;
-                p{
-                    font-size: 12px;
-                    line-height: 12px;
-                }
-                &::after{
-                    content: '';
-                    width: 1px;
-                    height: 10px;
-                    background-color: #ddd;
-                    position: absolute;
-                    top: 50%;
-                    right: -12px;
-                    transform: translateY(-50%);
-                }
-            }
-            :last-child{
-                &::after{
-                    display: none;
-                }
-            }
-            [class ^= "subDepth"]{
-                p{
-                    display: flex;
-                    gap: 0 5px;
+            .lnb{
+                display: flex;
+                align-items: center;
+                gap: 0 24px;
+                padding: 30px 20px 0;
+                box-sizing: border-box;
+                >li{
+                    position: relative;
+                    p{
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
                     &::after{
                         content: '';
-                        width: 12px;
-                        height: 12px;
-                        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 385.9l17-17L401 209l17-17L384 158.1l-17 17-143 143L81 175l-17-17L30.1 192l17 17L207 369l17 17z"/></svg>') center/contain no-repeat;
-                        display: block;
-                        transition: 0.3s;
+                        width: 1px;
+                        height: 10px;
+                        background-color: #ddd;
+                        position: absolute;
+                        top: 50%;
+                        right: -12px;
+                        transform: translateY(-50%);
                     }
                 }
-            }
-            .iconHome{
-                p{
-                    font-size: 0;
-                    width: 11px;
-                    height: 12px;
-                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 576 512'%3E%3Cpath fill='%23000' d='M511.8 287.6l64.2 0 0-47.6L288.4 0 0 240l0 47.6 64.1 0 0 224.4L224 512l0-160 128 0 0 160 160.8 0-1-224.4z'/%3E%3C/svg%3E") no-repeat center / contain;
+                :last-child{
+                    &::after{
+                        display: none;
+                    }
                 }
-            }
-            .subDepth{
-                >ul{
-                    width: 120px;
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 30px;
-                    z-index: 1;
-                    background-color: #fff;
-                    box-shadow: 0 0 10px 0 rgba(68, 68, 68, 0.11);
-                    display: none;
-                    li{
-                        a{
-                            font-size: 12px;
-                            padding: 0 14px;
-                            box-sizing: border-box;
-                            display: flex;
-                            align-items: center;
-                            min-height: 40px;
+                [class ^= "subDepth"]{
+                    p{
+                        display: flex;
+                        gap: 0 5px;
+                        &::after{
+                            content: '';
+                            width: 12px;
+                            height: 12px;
+                            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 385.9l17-17L401 209l17-17L384 158.1l-17 17-143 143L81 175l-17-17L30.1 192l17 17L207 369l17 17z"/></svg>') center/contain no-repeat;
+                            display: block;
+                            transition: 0.3s;
                         }
-                        &:hover{
+                    }
+                }
+                .iconHome{
+                    p{
+                        font-size: 0;
+                        width: 11px;
+                        height: 12px;
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 576 512'%3E%3Cpath fill='%23000' d='M511.8 287.6l64.2 0 0-47.6L288.4 0 0 240l0 47.6 64.1 0 0 224.4L224 512l0-160 128 0 0 160 160.8 0-1-224.4z'/%3E%3C/svg%3E") no-repeat center / contain;
+                    }
+                }
+                .subDepth{
+                    >ul{
+                        width: 120px;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 30px;
+                        z-index: 1;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px 0 rgba(68, 68, 68, 0.11);
+                        display: none;
+                        li{
                             a{
-                                background-color: #f6f6f6;
+                                font-size: 12px;
+                                padding: 0 14px;
+                                box-sizing: border-box;
+                                display: flex;
+                                align-items: center;
+                                min-height: 40px;
+                            }
+                            &:hover{
+                                a{
+                                    background-color: #f6f6f6;
+                                }
+                            }
+                        }
+                        .active{
+                            a{
+                                font-weight: bold;
                             }
                         }
                     }
-                    .active{
-                        a{
-                            font-weight: bold;
-                        }
-                    }
                 }
-            }
-            .subDepth.active{
-                p{
-                    &::after{
-                        transform: rotate(180deg);
+                .subDepth.active{
+                    p{
+                        &::after{
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }
@@ -2040,16 +2044,17 @@ h3{
 #wrap.sub0101{
     // cont01
     #cont01{
-        border-top: 1px solid #DDDDDD;
         padding: 60px 25px;
         box-sizing: border-box;
-        >p{
-            font-size: 14px;
-        }
-        >h3{
-            font-size: 26px;
-            line-height: 42px;
-            margin: 18px 0 0 0;
+        .txtBox{        
+            >p{
+                font-size: 14px;
+            }
+            >h3{
+                font-size: 26px;
+                line-height: 42px;
+                margin: 18px 0 0 0;
+            }
         }
         .imgBox{
             width: calc(100% - 60px);
@@ -2067,7 +2072,7 @@ h3{
         h3{
             font-size: 26px;
         }
-        [class ^= "cont02Box"]{
+        >[class ^= "cont02Box"]{
             .imgBox{
                 margin: 26px auto 30px;
                 border-radius: 20px;
@@ -2076,120 +2081,123 @@ h3{
                     width: 100%;
                 }
             }
-            >span{
-                display: table-cell;
-                color: #A76F58;
-                background-color: #F9DCD3;
-                font-size: 11px;
-                line-height: 11px;
-                font-weight: 600;
-                border-radius: 5px;
-                padding: 6px 8px;
-                box-sizing: border-box;
-            }
-            >b{
-                font-size: 20px;
-                line-height: 20px;
-                display: flex;
-                align-items: flex-end;
-                gap: 0 5px;
-                margin: 9px 0 0 0;
-                span{
-                    font-size: 10px;
-                    line-height: 10px;
+            
+            [class ^= "cont02Box0"]{
+                >span{
+                    display: table-cell;
+                    color: #A76F58;
+                    background-color: #F9DCD3;
+                    font-size: 11px;
+                    line-height: 11px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    padding: 6px 8px;
+                    box-sizing: border-box;
                 }
-            }
-
-            .scheduleBox{
-                margin: 15px 0;
-                table{
-                    width: 100%;
-                    tr{
-                        font-size: 12px;
-                        line-height: 12px;
-                        border-left: 1px solid #ddd;
-                        border-right: 1px solid #ddd;
-                        border-bottom: 1px solid #ddd;
-                        box-sizing: border-box;
-                        height: 48px;
-                        display: flex;
-                        &:nth-of-type(1){
-                            border: none;
-                            height: auto;
-                        }
-                        &:nth-of-type(3){
-                            border-radius: 0 0 10px 10px;
-                        }
-                        th{
-                            width: calc(100% / 7);
-                            background-color: #797255;
-                            color: #fff;
-                            font-weight: 700;
-                            padding: 12px 0;
-                            box-sizing: border-box;
-                            &:first-of-type{
-                                border-radius: 10px 0 0 0;
-                            }
-                            &:last-of-type{
-                                border-radius: 0 10px 0 0;
-                            }
-                        }
-                        td{
-                            width: calc(100% / 7);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            &:first-of-type{
-                                border-right: 1px solid #ddd;
-                                box-sizing: border-box;
-                                font-weight: 700;
-                                color: #1C1C1C;
-                            }
-                        }
-                        .scheduleOn{
-                            span{
-                                color: #fff;
-                                font-size: 11px;
-                                padding: 5px 9px;
-                                border-radius: 15px;
-                                background-color: #797255;
-                            }
-                        }
-                        .scheduleOff{
-                            span{
-                                color: #fff;
-                                font-size: 11px;
-                                padding: 5px 9px;
-                                border-radius: 15px;
-                                background-color: #A76F58;
-                            }
-                        }
+                >b{
+                    font-size: 20px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 0 5px;
+                    margin: 9px 0 0 0;
+                    span{
+                        font-size: 10px;
+                        line-height: 10px;
                     }
                 }
-            }
 
-            .careerBox{
-                background-color: #F8F8F6;
-                border-radius: 20px;
-                padding: 24px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-                gap: 30px 0;
-                >div{                
-                    b{
-                        font-size: 15px;
-                        color: #1c1c1c;
-                        display: block;
-                        margin: 0 0 3px 0;
-                    }
-                    ul{
-                        li{
-                            padding: 7px 0;
+                .scheduleBox{
+                    margin: 15px 0;
+                    table{
+                        width: 100%;
+                        tr{
+                            font-size: 12px;
+                            line-height: 12px;
+                            border-left: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
                             border-bottom: 1px solid #ddd;
                             box-sizing: border-box;
-                            font-size: 14px;
-                            color: #696969;                        
+                            height: 48px;
+                            display: flex;
+                            &:nth-of-type(1){
+                                border: none;
+                                height: auto;
+                            }
+                            &:nth-of-type(3){
+                                border-radius: 0 0 10px 10px;
+                            }
+                            th{
+                                width: calc(100% / 7);
+                                background-color: #797255;
+                                color: #fff;
+                                font-weight: 700;
+                                padding: 12px 0;
+                                box-sizing: border-box;
+                                &:first-of-type{
+                                    border-radius: 10px 0 0 0;
+                                }
+                                &:last-of-type{
+                                    border-radius: 0 10px 0 0;
+                                }
+                            }
+                            td{
+                                width: calc(100% / 7);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &:first-of-type{
+                                    border-right: 1px solid #ddd;
+                                    box-sizing: border-box;
+                                    font-weight: 700;
+                                    color: #1C1C1C;
+                                }
+                            }
+                            .scheduleOn{
+                                span{
+                                    color: #fff;
+                                    font-size: 11px;
+                                    padding: 5px 9px;
+                                    border-radius: 15px;
+                                    background-color: #797255;
+                                }
+                            }
+                            .scheduleOff{
+                                span{
+                                    color: #fff;
+                                    font-size: 11px;
+                                    padding: 5px 9px;
+                                    border-radius: 15px;
+                                    background-color: #A76F58;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .careerBox{
+                    background-color: #F8F8F6;
+                    border-radius: 20px;
+                    padding: 24px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px 0;
+                    >div{                
+                        b{
+                            font-size: 15px;
+                            color: #1c1c1c;
+                            display: block;
+                            margin: 0 0 3px 0;
+                        }
+                        ul{
+                            li{
+                                padding: 7px 0;
+                                border-bottom: 1px solid #ddd;
+                                box-sizing: border-box;
+                                font-size: 14px;
+                                color: #696969;                        
+                            }
                         }
                     }
                 }
@@ -2215,6 +2223,9 @@ h3{
             h3{
                 font-size: 26px;
                 line-height: 40px;
+            }
+            .btnMore{
+                display: none;
             }
         }
         .reviewBox{
@@ -2340,6 +2351,7 @@ h3{
         padding: 80px 0;
         box-sizing: border-box;
         background: url(../img/clinic_special_bg.jpg) no-repeat;
+        background-size: cover;
         h3{
             font-size: 26px;
             color: #fff;
@@ -2388,6 +2400,13 @@ h3{
                     }
                 }
             }
+
+            .cont04BoxPc{
+                display: none;
+            }
+        }
+        .bg{
+            display: none;
         }
     }
 }
@@ -4501,6 +4520,292 @@ h3{
                         }
                         .swiper-button-prev{
                             transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // sub0100 믿음직한 의료진
+    #wrap.sub0101{
+        // #cont01
+        #cont01{
+            padding: 128px 20px;
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .txtBox{
+                padding: 15px 0 0 0;
+                box-sizing: border-box;
+                >p{
+                    font-size: 16px;
+                }
+                >h3{
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin: 24px 0 0 0;
+                }
+            }
+            .imgBox{
+                width: 544px;
+                margin: 0;
+                // &::before{
+                //     content: '';
+                //     position: absolute;
+                //     width: 1200px;
+                //     height: 1200px;
+                //     top: 70%;
+                //     left: 50%;
+                //     transform: translate(-50%,-50%);
+                //     background: radial-gradient(circle,rgba(221, 200, 181, 1) 0%, rgba(221, 200, 181, 0.32) 20%, rgba(255, 255, 255, 0) 50%);
+                // }
+                img{
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+        }
+        
+        // #cont02
+        #cont02{
+            padding: 0 20px 128px;
+            h3{
+                font-size: 36px;
+                line-height: 40px;
+                max-width: 1300px;
+                margin: 0 auto;
+            }
+            >[class ^= "cont02Box"]{
+                display: flex;
+                align-items: flex-start;
+                gap: 0 64px;
+                max-width: 1300px;
+                margin: 32px auto 0;
+                .imgBox{
+                    width: calc(100% - 32px);
+                    margin: 0;
+                    position: sticky;
+                    top: 80px;
+                }
+                [class ^= "cont02Box0"]{
+                    width: calc(100% - 32px);
+                    >span{
+                        font-size: 14px;
+                        padding: 11px 13px;
+                    }
+                    >b{
+                        font-size: 30px;
+                        line-height: 40px;
+                        margin: 12px 0 0 0;
+                        gap: 0 10px;
+                        span{
+                            font-size: 15px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    .scheduleBox{
+                       margin: 20px 0;
+                       table{
+                            tr{
+                                height: 64px;
+                                font-size: 14px;
+                                line-height: 14px;
+                                td{
+                                    &:first-of-type{
+                                        font-size: 16px;
+                                    }       
+                                }
+                                .scheduleOn{
+                                    span{
+                                        font-size: 14px;
+                                        padding: 8px 14px;
+                                    }
+                                }
+                                .scheduleOff{
+                                    span{
+                                        font-size: 14px;
+                                        padding: 8px 14px;
+                                    }
+                                }
+                            }
+                       }
+                    }
+
+                    .careerBox{
+                        padding: 32px;
+                        >div{
+                            b{
+                                font-size: 17px;
+                            }
+                            ul{
+                                li{
+                                    font-size: 16px;
+                                    line-height: 31px;
+                                    padding: 8px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont02Box02{
+                margin: 180px auto 0;
+            }
+        }
+
+        // #cont03
+        #cont03{
+            .layout{
+                max-width: 1300px;
+                margin: 0 auto;
+                display: flex;
+                .txtBox{
+                    width: 50%;
+                    h5{
+                        font-size: 16px;
+                        line-height: 24px;
+                        &:last-of-type{
+                            margin: 16px 0 0 0;
+                        }
+                    }
+                    h3{
+                        font-size: 36px;
+                        line-height: 50px;
+                    }
+                    .btnMore{
+                        display: inline-flex;
+                        margin: 65px 0 0 0;
+                    }
+                }
+                .reviewBox{
+                    width: 50%;
+                    margin: 0;
+                    .btnMore{
+                        display: none;
+                    }
+                    .reviewBoxCont{
+                        gap: 64px 0;
+                        ul{
+                            margin: 0;
+                            gap: 40px 24px;
+                            li{
+                                width: calc(50% - 12px);
+                                a{
+                                    >div{
+                                        gap: 25px 0;
+                                        .txtBox{
+                                            width: 100%;
+                                            gap: 12px 0;
+                                            b{
+                                                font-size: 18px;
+                                                line-height: 28px;
+                                            }
+                                            p{
+                                                span{
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                        .loginBox{
+                                            height: calc(100% - 105px);
+                                            p{
+                                                font-size: 17px;
+                                                line-height: 28px;
+                                                &::before{
+                                                    width: 17px;
+                                                    height: 21px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        button{
+                            font-size: 16px;
+                            padding: 14px 35px;
+                        }
+                    }
+
+                }
+            }
+                
+        }
+
+        // #cont04
+        #cont04{
+            background: none;
+            position: relative;
+            .bg{
+                display: block;
+                position: absolute;
+                top: 0px;
+                z-index: -1;
+                img{
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+            h3{
+                font-size: 36px;
+                line-height: 50px;
+                max-width: 1300px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            .cont04Wrap{
+                max-width: 1300px;
+                margin: 0 auto;
+                .cont04Box{
+                    display: none;
+                }
+                .cont04BoxPc{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin: 56px 0 0 0;
+                    .imgBox{
+                        max-width: 50%;
+                        width: 496px;
+                        height: 630px;
+                        overflow: hidden;
+                        position: sticky;
+                        top: 200px;
+                        img{
+                            position: absolute;
+                            height: 100%;
+                        }
+                    }
+                    .txtWrap{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 130px 0;
+                        padding: 190px 0 0 150px;
+                        box-sizing: border-box;
+                        .txtBox{
+                            .icon{
+                                width: 45px;
+                                height: 45px;
+                                ;
+                            }
+                            b{
+                                color: #fff;
+                                font-size: 30px;
+                                line-height: 45px;
+                                margin: 28px 0 0 0;
+                                display: block;
+                            }
+                            p{
+                                color: #fff;
+                                font-size: 17px;
+                                line-height: 30px;
+                                margin: 12px 0 0 0;
+                            }
                         }
                     }
                 }

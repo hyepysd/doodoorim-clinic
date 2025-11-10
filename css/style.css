@@ -30,21 +30,25 @@ h3 {
   padding: 60px 0 0 0;
   box-sizing: border-box;
 }
-#wrap[class^=sub] #section .lnb {
+#wrap[class^=sub] #section .subTop {
+  border-bottom: 1px solid #DDDDDD;
+  box-sizing: border-box;
+}
+#wrap[class^=sub] #section .subTop .lnb {
   display: flex;
   align-items: center;
   gap: 0 24px;
   padding: 30px 20px 0;
   box-sizing: border-box;
 }
-#wrap[class^=sub] #section .lnb > li {
+#wrap[class^=sub] #section .subTop .lnb > li {
   position: relative;
 }
-#wrap[class^=sub] #section .lnb > li p {
+#wrap[class^=sub] #section .subTop .lnb > li p {
   font-size: 12px;
   line-height: 12px;
 }
-#wrap[class^=sub] #section .lnb > li::after {
+#wrap[class^=sub] #section .subTop .lnb > li::after {
   content: "";
   width: 1px;
   height: 10px;
@@ -54,14 +58,14 @@ h3 {
   right: -12px;
   transform: translateY(-50%);
 }
-#wrap[class^=sub] #section .lnb :last-child::after {
+#wrap[class^=sub] #section .subTop .lnb :last-child::after {
   display: none;
 }
-#wrap[class^=sub] #section .lnb [class^=subDepth] p {
+#wrap[class^=sub] #section .subTop .lnb [class^=subDepth] p {
   display: flex;
   gap: 0 5px;
 }
-#wrap[class^=sub] #section .lnb [class^=subDepth] p::after {
+#wrap[class^=sub] #section .subTop .lnb [class^=subDepth] p::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -69,13 +73,13 @@ h3 {
   display: block;
   transition: 0.3s;
 }
-#wrap[class^=sub] #section .lnb .iconHome p {
+#wrap[class^=sub] #section .subTop .lnb .iconHome p {
   font-size: 0;
   width: 11px;
   height: 12px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 576 512'%3E%3Cpath fill='%23000' d='M511.8 287.6l64.2 0 0-47.6L288.4 0 0 240l0 47.6 64.1 0 0 224.4L224 512l0-160 128 0 0 160 160.8 0-1-224.4z'/%3E%3C/svg%3E") no-repeat center/contain;
 }
-#wrap[class^=sub] #section .lnb .subDepth > ul {
+#wrap[class^=sub] #section .subTop .lnb .subDepth > ul {
   width: 120px;
   display: flex;
   flex-direction: column;
@@ -86,7 +90,7 @@ h3 {
   box-shadow: 0 0 10px 0 rgba(68, 68, 68, 0.11);
   display: none;
 }
-#wrap[class^=sub] #section .lnb .subDepth > ul li a {
+#wrap[class^=sub] #section .subTop .lnb .subDepth > ul li a {
   font-size: 12px;
   padding: 0 14px;
   box-sizing: border-box;
@@ -94,13 +98,13 @@ h3 {
   align-items: center;
   min-height: 40px;
 }
-#wrap[class^=sub] #section .lnb .subDepth > ul li:hover a {
+#wrap[class^=sub] #section .subTop .lnb .subDepth > ul li:hover a {
   background-color: #f6f6f6;
 }
-#wrap[class^=sub] #section .lnb .subDepth > ul .active a {
+#wrap[class^=sub] #section .subTop .lnb .subDepth > ul .active a {
   font-weight: bold;
 }
-#wrap[class^=sub] #section .lnb .subDepth.active p::after {
+#wrap[class^=sub] #section .subTop .lnb .subDepth.active p::after {
   transform: rotate(180deg);
 }
 #wrap[class^=sub] #section .subTxt {
@@ -1884,14 +1888,13 @@ h3 {
 }
 
 #wrap.sub0101 #cont01 {
-  border-top: 1px solid #DDDDDD;
   padding: 60px 25px;
   box-sizing: border-box;
 }
-#wrap.sub0101 #cont01 > p {
+#wrap.sub0101 #cont01 .txtBox > p {
   font-size: 14px;
 }
-#wrap.sub0101 #cont01 > h3 {
+#wrap.sub0101 #cont01 .txtBox > h3 {
   font-size: 26px;
   line-height: 42px;
   margin: 18px 0 0 0;
@@ -1910,15 +1913,15 @@ h3 {
 #wrap.sub0101 #cont02 h3 {
   font-size: 26px;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .imgBox {
+#wrap.sub0101 #cont02 > [class^=cont02Box] .imgBox {
   margin: 26px auto 30px;
   border-radius: 20px;
   overflow: hidden;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .imgBox img {
+#wrap.sub0101 #cont02 > [class^=cont02Box] .imgBox img {
   width: 100%;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] > span {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > span {
   display: table-cell;
   color: #A76F58;
   background-color: #F9DCD3;
@@ -1929,7 +1932,7 @@ h3 {
   padding: 6px 8px;
   box-sizing: border-box;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] > b {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > b {
   font-size: 20px;
   line-height: 20px;
   display: flex;
@@ -1937,17 +1940,17 @@ h3 {
   gap: 0 5px;
   margin: 9px 0 0 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] > b span {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > b span {
   font-size: 10px;
   line-height: 10px;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox {
   margin: 15px 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table {
   width: 100%;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr {
   font-size: 12px;
   line-height: 12px;
   border-left: 1px solid #ddd;
@@ -1957,14 +1960,14 @@ h3 {
   height: 48px;
   display: flex;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr:nth-of-type(1) {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr:nth-of-type(1) {
   border: none;
   height: auto;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr:nth-of-type(3) {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr:nth-of-type(3) {
   border-radius: 0 0 10px 10px;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr th {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr th {
   width: 14.2857142857%;
   background-color: #797255;
   color: #fff;
@@ -1972,39 +1975,39 @@ h3 {
   padding: 12px 0;
   box-sizing: border-box;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr th:first-of-type {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr th:first-of-type {
   border-radius: 10px 0 0 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr th:last-of-type {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr th:last-of-type {
   border-radius: 0 10px 0 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr td {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr td {
   width: 14.2857142857%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr td:first-of-type {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr td:first-of-type {
   border-right: 1px solid #ddd;
   box-sizing: border-box;
   font-weight: 700;
   color: #1C1C1C;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr .scheduleOn span {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr .scheduleOn span {
   color: #fff;
   font-size: 11px;
   padding: 5px 9px;
   border-radius: 15px;
   background-color: #797255;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .scheduleBox table tr .scheduleOff span {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr .scheduleOff span {
   color: #fff;
   font-size: 11px;
   padding: 5px 9px;
   border-radius: 15px;
   background-color: #A76F58;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .careerBox {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox {
   background-color: #F8F8F6;
   border-radius: 20px;
   padding: 24px;
@@ -2013,13 +2016,13 @@ h3 {
   flex-direction: column;
   gap: 30px 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .careerBox > div b {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox > div b {
   font-size: 15px;
   color: #1c1c1c;
   display: block;
   margin: 0 0 3px 0;
 }
-#wrap.sub0101 #cont02 [class^=cont02Box] .careerBox > div ul li {
+#wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox > div ul li {
   padding: 7px 0;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
@@ -2042,6 +2045,9 @@ h3 {
 #wrap.sub0101 #cont03 .txtBox h3 {
   font-size: 26px;
   line-height: 40px;
+}
+#wrap.sub0101 #cont03 .txtBox .btnMore {
+  display: none;
 }
 #wrap.sub0101 #cont03 .reviewBox {
   margin: 48px 0 0 0;
@@ -2159,6 +2165,7 @@ h3 {
   padding: 80px 0;
   box-sizing: border-box;
   background: url(../img/clinic_special_bg.jpg) no-repeat;
+  background-size: cover;
 }
 #wrap.sub0101 #cont04 h3 {
   font-size: 26px;
@@ -2208,6 +2215,12 @@ h3 {
   font-size: 15px;
   opacity: 0.7;
   margin: 8px 0 0 0;
+}
+#wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc {
+  display: none;
+}
+#wrap.sub0101 #cont04 .bg {
+  display: none;
 }
 
 #footer {
@@ -4068,5 +4081,246 @@ h3 {
   }
   #wrap.sub0100 #section #cont04 .cont04Box02 .swiperButton .swiper-button-prev {
     transform: rotate(180deg);
+  }
+  #wrap.sub0101 #cont01 {
+    padding: 128px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #wrap.sub0101 #cont01 .txtBox {
+    padding: 15px 0 0 0;
+    box-sizing: border-box;
+  }
+  #wrap.sub0101 #cont01 .txtBox > p {
+    font-size: 16px;
+  }
+  #wrap.sub0101 #cont01 .txtBox > h3 {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 24px 0 0 0;
+  }
+  #wrap.sub0101 #cont01 .imgBox {
+    width: 544px;
+    margin: 0;
+  }
+  #wrap.sub0101 #cont01 .imgBox img {
+    position: relative;
+    z-index: 5;
+  }
+  #wrap.sub0101 #cont02 {
+    padding: 0 20px 128px;
+  }
+  #wrap.sub0101 #cont02 h3 {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 64px;
+    max-width: 1300px;
+    margin: 32px auto 0;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] .imgBox {
+    width: calc(100% - 32px);
+    margin: 0;
+    position: sticky;
+    top: 80px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] {
+    width: calc(100% - 32px);
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > span {
+    font-size: 14px;
+    padding: 11px 13px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > b {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 12px 0 0 0;
+    gap: 0 10px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] > b span {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox {
+    margin: 20px 0;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr {
+    height: 64px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr td:first-of-type {
+    font-size: 16px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr .scheduleOn span {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .scheduleBox table tr .scheduleOff span {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox {
+    padding: 32px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox > div b {
+    font-size: 17px;
+  }
+  #wrap.sub0101 #cont02 > [class^=cont02Box] [class^=cont02Box0] .careerBox > div ul li {
+    font-size: 16px;
+    line-height: 31px;
+    padding: 8px 0;
+  }
+  #wrap.sub0101 #cont02 .cont02Box02 {
+    margin: 180px auto 0;
+  }
+  #wrap.sub0101 #cont03 .layout {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+  }
+  #wrap.sub0101 #cont03 .layout .txtBox {
+    width: 50%;
+  }
+  #wrap.sub0101 #cont03 .layout .txtBox h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #wrap.sub0101 #cont03 .layout .txtBox h5:last-of-type {
+    margin: 16px 0 0 0;
+  }
+  #wrap.sub0101 #cont03 .layout .txtBox h3 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  #wrap.sub0101 #cont03 .layout .txtBox .btnMore {
+    display: inline-flex;
+    margin: 65px 0 0 0;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox {
+    width: 50%;
+    margin: 0;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .btnMore {
+    display: none;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont {
+    gap: 64px 0;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul {
+    margin: 0;
+    gap: 40px 24px;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li {
+    width: calc(50% - 12px);
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div {
+    gap: 25px 0;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .txtBox {
+    width: 100%;
+    gap: 12px 0;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .txtBox b {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .txtBox p span {
+    font-size: 14px;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .loginBox {
+    height: calc(100% - 105px);
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .loginBox p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont ul li a > div .loginBox p::before {
+    width: 17px;
+    height: 21px;
+  }
+  #wrap.sub0101 #cont03 .layout .reviewBox .reviewBoxCont button {
+    font-size: 16px;
+    padding: 14px 35px;
+  }
+  #wrap.sub0101 #cont04 {
+    background: none;
+    position: relative;
+  }
+  #wrap.sub0101 #cont04 .bg {
+    display: block;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+  #wrap.sub0101 #cont04 .bg img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #wrap.sub0101 #cont04 h3 {
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04Box {
+    display: none;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 56px 0 0 0;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .imgBox {
+    max-width: 50%;
+    width: 496px;
+    height: 630px;
+    overflow: hidden;
+    position: sticky;
+    top: 200px;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .imgBox img {
+    position: absolute;
+    height: 100%;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .txtWrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 130px 0;
+    padding: 190px 0 0 150px;
+    box-sizing: border-box;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .txtWrap .txtBox .icon {
+    width: 45px;
+    height: 45px;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .txtWrap .txtBox b {
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 28px 0 0 0;
+    display: block;
+  }
+  #wrap.sub0101 #cont04 .cont04Wrap .cont04BoxPc .txtWrap .txtBox p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 12px 0 0 0;
   }
 }/*# sourceMappingURL=style.css.map */
