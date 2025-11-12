@@ -653,6 +653,28 @@ h3{
     display: block;
 }
 
+// marquee
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    .marqueeBox{
+        display: inline-block;
+        white-space: nowrap;
+        animation: scrollLeft 80s linear infinite;
+        span{
+            padding-right: 24px;
+            font-size: 60px;
+            line-height: 85px;
+            color: rgba(111, 109, 107, 0.1);
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+    }
+    @keyframes scrollLeft {
+        to   { transform: translateX(-100%); }
+        from { transform: translateX(0%); }
+    }
+}
 
 // header
 #header{
@@ -1392,27 +1414,7 @@ h3{
                 }
             }
 
-            .marquee {
-                width: 100%;
-                overflow: hidden;
-                .marqueeBox{
-                    display: inline-block;
-                    white-space: nowrap;
-                    animation: scrollLeft 80s linear infinite;
-                    span{
-                        padding-right: 24px;
-                        font-size: 60px;
-                        line-height: 60px;
-                        color: rgba(111, 109, 107, 0.1);
-                        font-family: "Poppins", sans-serif;
-                        font-weight: bold;
-                    }
-                }
-                @keyframes scrollLeft {
-                    to   { transform: translateX(-100%); }
-                    from { transform: translateX(0%); }
-                }
-            }
+            
         }
 
         // cont09
@@ -2040,7 +2042,7 @@ h3{
 }
 
 
-// sub0100 믿음직한 의료진
+// sub0101 믿음직한 의료진
 #wrap.sub0101{
     // cont01
     #cont01{
@@ -2407,6 +2409,132 @@ h3{
         }
         .bg{
             display: none;
+        }
+    }
+}
+
+
+// sub0102 병원 둘러보기
+#wrap.sub0102{
+    #section{
+        // #cont01
+        #cont01{
+            padding: 60px 0px 0;
+            box-sizing: border-box;
+            .txtBox{
+                padding: 0 20px;
+                box-sizing: border-box;
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 26px;
+                    line-height: 40px;
+                    margin: 18px 0 0 0;
+                }
+            }
+            .imgWrap{
+                padding: 0 20px;
+                box-sizing: border-box;
+                .imgBox{                    
+                    margin: 48px 0 0 0;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    .img_top_tour{
+                        display: none;
+                    }
+                }
+            }
+            .marquee{
+                margin: 85px 0;
+            }
+        }
+
+        // #cont02
+        #cont02{
+            padding: 0 0 80px 0;
+            box-sizing: border-box;
+            h3{
+                font-size: 26px;
+                line-height: 34px;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            .swiperWrap{
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            .mySwiper2{
+                margin: 24px 0 14px;
+                // overflow: visible;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        border-radius: 10px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                        .label{
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            background-color: #797255;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 11px;
+                            padding: 5px 6px;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            color: #fff;
+                        }
+                    }
+                }
+                [class ^= "swiper-button"]{
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    box-sizing: border-box;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 30px;
+                    margin: 0;
+                    left: unset;
+                    right: unset;
+                    top: unset;
+                    bottom: unset;
+                    opacity: 1;
+                    &::after{
+                        content: '';
+                        width: 8px;
+                        height: 8px;
+                        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.001 20"><path data-name="패스 13449" d="M10,0,8.237,1.762,15.212,8.75H0v2.5H15.212L8.237,18.237,10,20,20,10Z" transform="translate(0 0)" fill="%231c1c1c"/></svg>') no-repeat center / contain;
+                    }
+                }
+                .swiper-button-prev{
+                    transform: rotate(180deg) translateY(50%);
+                    top: 50%;
+                    left: -15px;
+                }
+                .swiper-button-next{
+                    transform:  translateY(-50%);
+                    top: 50%;
+                    right: -15px;
+                }
+            }
+            .mySwiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        border-radius: 10px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2789,6 +2917,16 @@ h3{
                         gap: 5px 0;
                     }
                 }
+            }
+        }
+    }
+
+    // marquee
+    .marquee{
+        .marqueeBox{
+            span{
+                font-size: 85px;
+                line-height: 90px;
             }
         }
     }
@@ -3930,14 +4068,6 @@ h3{
                 .loginPopWrap{
                     position: fixed;
                 }
-                .marquee{
-                    .marqueeBox{
-                        span{
-                            font-size: 85px;
-                            line-height: 90px;
-                        }
-                    }
-                }
             }
 
             // #cont09
@@ -4806,6 +4936,82 @@ h3{
                                 line-height: 30px;
                                 margin: 12px 0 0 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // sub0102 병원 둘러보기
+    #wrap.sub0102{
+        #section{
+            // #cont01
+            #cont01{
+                padding: 128px 0 0 0;
+                .txtBox{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    p{
+                        font-size: 16px;
+                        margin: 15px 0 0 0;
+                    }
+                    h3{
+                        font-size: 36px;
+                        line-height: 50px;
+                        margin: 24px 0 0 0;
+                    }
+                }
+
+                .imgWrap{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    .imgBox{
+                        margin: 96px auto 0;
+                        .img_top_tour_mo{
+                            display: none;
+                        }
+                        .img_top_tour{
+                            display: block;
+                        }
+                    }
+                }     
+                
+                .marquee{
+                    margin: 128px 0;
+                }
+            }
+
+            // #cont02
+            #cont02{
+                max-width: 1300px;
+                margin: 0 auto;
+                h3{
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                .swiperWrap{
+                    margin: 32px 0 0 0;
+                }
+                .mySwiper2{
+                    margin: 0 0 20px;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .label{
+                                top: 30px;
+                                left: 30px;
+                                font-size: 16px;
+                                padding: 12px 14px;
+                            }
+                        }
+                    }
+                    [class^=swiper-button]{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        &::after{
+                            width: 14px;
+                            height: 14px;
                         }
                     }
                 }

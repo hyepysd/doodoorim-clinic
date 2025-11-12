@@ -602,6 +602,32 @@ h3 {
   display: block;
 }
 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+.marquee .marqueeBox {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 80s linear infinite;
+}
+.marquee .marqueeBox span {
+  padding-right: 24px;
+  font-size: 60px;
+  line-height: 85px;
+  color: rgba(111, 109, 107, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+@keyframes scrollLeft {
+  to {
+    transform: translateX(-100%);
+  }
+  from {
+    transform: translateX(0%);
+  }
+}
+
 #header {
   width: 100%;
   height: 60px;
@@ -1296,31 +1322,6 @@ h3 {
   color: #fff;
   text-align: center;
   font-weight: bold;
-}
-#wrap.main #section #cont08 .marquee {
-  width: 100%;
-  overflow: hidden;
-}
-#wrap.main #section #cont08 .marquee .marqueeBox {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scrollLeft 80s linear infinite;
-}
-#wrap.main #section #cont08 .marquee .marqueeBox span {
-  padding-right: 24px;
-  font-size: 60px;
-  line-height: 60px;
-  color: rgba(111, 109, 107, 0.1);
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-@keyframes scrollLeft {
-  to {
-    transform: translateX(-100%);
-  }
-  from {
-    transform: translateX(0%);
-  }
 }
 #wrap.main #section #cont09 {
   padding: 0 20px;
@@ -2223,6 +2224,116 @@ h3 {
   display: none;
 }
 
+#wrap.sub0102 #section #cont01 {
+  padding: 60px 0px 0;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont01 .txtBox {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont01 .txtBox p {
+  font-size: 14px;
+  font-weight: 500;
+}
+#wrap.sub0102 #section #cont01 .txtBox h3 {
+  font-size: 26px;
+  line-height: 40px;
+  margin: 18px 0 0 0;
+}
+#wrap.sub0102 #section #cont01 .imgWrap {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont01 .imgWrap .imgBox {
+  margin: 48px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#wrap.sub0102 #section #cont01 .imgWrap .imgBox img {
+  width: 100%;
+}
+#wrap.sub0102 #section #cont01 .imgWrap .imgBox .img_top_tour {
+  display: none;
+}
+#wrap.sub0102 #section #cont01 .marquee {
+  margin: 85px 0;
+}
+#wrap.sub0102 #section #cont02 {
+  padding: 0 0 80px 0;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont02 h3 {
+  font-size: 26px;
+  line-height: 34px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont02 .swiperWrap {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 {
+  margin: 24px 0 14px;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 .swiper-wrapper .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 .swiper-wrapper .swiper-slide .label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #797255;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  padding: 5px 6px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #fff;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 [class^=swiper-button] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0;
+  left: unset;
+  right: unset;
+  top: unset;
+  bottom: unset;
+  opacity: 1;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 [class^=swiper-button]::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.001 20"><path data-name="패스 13449" d="M10,0,8.237,1.762,15.212,8.75H0v2.5H15.212L8.237,18.237,10,20,20,10Z" transform="translate(0 0)" fill="%231c1c1c"/></svg>') no-repeat center/contain;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 .swiper-button-prev {
+  transform: rotate(180deg) translateY(50%);
+  top: 50%;
+  left: -15px;
+}
+#wrap.sub0102 #section #cont02 .mySwiper2 .swiper-button-next {
+  transform: translateY(-50%);
+  top: 50%;
+  right: -15px;
+}
+#wrap.sub0102 #section #cont02 .mySwiper .swiper-wrapper .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+}
+#wrap.sub0102 #section #cont02 .mySwiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
 #footer {
   padding: 40px 0 100px 0;
   border-top: 1px solid #DDDDDD;
@@ -2554,6 +2665,10 @@ h3 {
   .loginPopWrap .loginPopCont .loginPopSns > div a {
     font-size: 15px;
     gap: 5px 0;
+  }
+  .marquee .marqueeBox span {
+    font-size: 85px;
+    line-height: 90px;
   }
   #header {
     height: 80px;
@@ -3573,10 +3688,6 @@ h3 {
   #wrap.main #section #cont08 .loginPopWrap {
     position: fixed;
   }
-  #wrap.main #section #cont08 .marquee .marqueeBox span {
-    font-size: 85px;
-    line-height: 90px;
-  }
   #wrap.main #section #cont09 {
     padding: 170px 0 0 0;
   }
@@ -4322,5 +4433,66 @@ h3 {
     font-size: 17px;
     line-height: 30px;
     margin: 12px 0 0 0;
+  }
+  #wrap.sub0102 #section #cont01 {
+    padding: 128px 0 0 0;
+  }
+  #wrap.sub0102 #section #cont01 .txtBox {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #wrap.sub0102 #section #cont01 .txtBox p {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+  }
+  #wrap.sub0102 #section #cont01 .txtBox h3 {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 24px 0 0 0;
+  }
+  #wrap.sub0102 #section #cont01 .imgWrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #wrap.sub0102 #section #cont01 .imgWrap .imgBox {
+    margin: 96px auto 0;
+  }
+  #wrap.sub0102 #section #cont01 .imgWrap .imgBox .img_top_tour_mo {
+    display: none;
+  }
+  #wrap.sub0102 #section #cont01 .imgWrap .imgBox .img_top_tour {
+    display: block;
+  }
+  #wrap.sub0102 #section #cont01 .marquee {
+    margin: 128px 0;
+  }
+  #wrap.sub0102 #section #cont02 {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #wrap.sub0102 #section #cont02 h3 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #wrap.sub0102 #section #cont02 .swiperWrap {
+    margin: 32px 0 0 0;
+  }
+  #wrap.sub0102 #section #cont02 .mySwiper2 {
+    margin: 0 0 20px;
+  }
+  #wrap.sub0102 #section #cont02 .mySwiper2 .swiper-wrapper .swiper-slide .label {
+    top: 30px;
+    left: 30px;
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+  #wrap.sub0102 #section #cont02 .mySwiper2 [class^=swiper-button] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  #wrap.sub0102 #section #cont02 .mySwiper2 [class^=swiper-button]::after {
+    width: 14px;
+    height: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
