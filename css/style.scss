@@ -1,7 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body{
     font-family: 'Pretendard';
     letter-spacing: -0.03em;
@@ -2540,6 +2539,366 @@ h3{
 }
 
 
+// sub0103 두드림 치료컨셉
+#wrap.sub0103{
+    #section{
+        // #cont01
+        #cont01{
+            padding: 60px 0 0 0;
+            box-sizing: border-box;
+           .txtBox{
+                padding: 0 20px;
+                box-sizing: border-box;
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 26px;
+                    line-height: 40px;
+                    margin: 18px 0 0 0;
+                }
+            }
+
+            .imgWrap{
+                padding: 0 20px;
+                box-sizing: border-box;
+                margin: 48px 0 0 0;
+                .imgBox{
+                    border-radius: 20px;                    
+                    overflow: hidden;
+                    .img_top_concept{
+                        display: none;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .marquee{
+                margin: 80px 0;
+            }
+        }
+
+        // #cont02
+        #cont02{
+            padding: 80px 0;
+            box-sizing: border-box;
+            background: linear-gradient(180deg, #A76F58 0%, #70673B 79.52%);
+            h3{
+                color: #fff;
+                text-align: center;
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+            }
+
+            .cont02Cont{
+                padding: 0 20px;
+                box-sizing: border-box;
+                margin: 30px 0 0 0;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        border-radius: 20px;
+                        overflow: hidden;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            width: 100%;
+                            height: 150px;
+                            position: absolute;
+                            bottom: 0px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background: linear-gradient(180deg, rgba(45, 45, 45, 0.00) 0%, #2D2D2D 100%);
+                        }
+                        .imgBox{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .txtBox{
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0px;
+                            z-index: 1;
+                            padding: 30px;
+                            box-sizing: border-box;
+                            color: #fff;
+                            b{
+                                font-size: 20px;
+                                box-sizing: border-box;
+                                display: flex;
+                                align-items: center;
+                                gap: 0 10px;
+                                &::before{
+                                    content: '';
+                                    width: 6px;
+                                    height: 6px;
+                                    border-radius: 6px;
+                                    background-color: #FBC1AF;
+                                }
+                            }
+                            p{
+                                font-size: 14px;
+                                line-height: 22px;
+                                margin: 7px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // #cont03
+        #cont03{
+            padding: 80px 0px;
+            box-sizing: border-box;
+            .logo{
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            >h3{
+                padding: 0 20px;
+                box-sizing: border-box;
+                margin: 48px 0 24px;
+                font-size: 26px;
+                line-height: 42px;
+                text-align: center;
+            }
+            >p{
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+
+        // #cont04
+        #cont04{
+            padding: 80px 0 0 0;
+            box-sizing: border-box;
+            >h3{
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 26px;
+                line-height: 32px;
+            }
+            >p{
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 14px;
+                line-height: 24px;
+                margin: 10px 0 0 0;
+            }
+            .cont04Wrap{
+                margin: 30px 0 0 0;
+                .cont04Cont{
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            position: relative;
+                            .imgBox{
+                                border-radius: 15px;
+                                overflow: hidden;
+                                position: relative;
+                                padding-top: 130%;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                            .txtBox{
+                                position: absolute;
+                                bottom: 0px;
+                                padding: 30px 25px;
+                                box-sizing: border-box;
+                                color: #fff;
+                                >div{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    gap: 0 8px;
+                                    margin: 0 0 30px 0;
+                                    .icon{
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                    p{
+                                        font-size: 17px;
+                                        font-weight: 500;
+                                        font-family: "Poppins", sans-serif;
+                                        text-transform:uppercase
+                                    }
+                                }
+                                b{
+                                    font-size: 20px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    margin: 10px 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont04WrapPc{
+                display: none;
+            }
+        }
+
+        // cont05
+        #cont05{
+            padding: 80px 20px;
+            box-sizing: border-box;
+            background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(248, 248, 246, 1) 100%);
+            .txtBox{
+                h5{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                &:last-of-type{
+                    margin: 8px 0 0 0;
+                }
+                }
+                h3{
+                    font-size: 26px;
+                    line-height: 40px;
+                }
+                .btnMore{
+                    display: none;
+                }
+            }
+            .reviewBox{
+                margin: 48px 0 0 0;
+                .reviewBoxCont{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px 0;
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 25px 10px;
+                        margin: 30px 0 0 0;
+                        li{
+                            width: calc(100% / 2 - 5px);
+                            a{
+                                >div{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px 0;
+                                    .tit{
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 10px;
+                                        background-color: #797255;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        color: #fff;
+                                        border-radius: 6px;
+                                        padding: 5px 6px;
+                                        box-sizing: border-box;
+                                        z-index: 1;
+                                    }
+                                    .imgBox{
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        img{
+                                            width: 100%;
+                                            filter: blur(3px);
+                                        }
+                                    }
+                                    .loginBox{
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 100%;
+                                        height: calc(100% - 82px);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: rgba(0,0,0,0.4);
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        p{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            gap: 15px 0;
+                                            font-size: 12px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 18px;
+                                            &::before{
+                                                content: '';
+                                                width: 12px;
+                                                height: 12px;
+                                                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='19' height='21' viewBox='0 0 19 21' fill='none'><path d='M9.5 3C7.74219 3 6.375 4.40625 6.375 6.125V8H12.625V6.125C12.625 4.40625 11.2188 3 9.5 3ZM3.875 6.125C3.875 3.03906 6.375 0.5 9.5 0.5C12.5859 0.5 15.125 3.03906 15.125 6.125V8H15.75C17.1172 8 18.25 9.13281 18.25 10.5V18C18.25 19.4062 17.1172 20.5 15.75 20.5H3.25C1.84375 20.5 0.75 19.4062 0.75 18V10.5C0.75 9.13281 1.84375 8 3.25 8H3.875V6.125ZM10.75 13C10.75 12.3359 10.1641 11.75 9.5 11.75C8.79688 11.75 8.25 12.3359 8.25 13V15.5C8.25 16.2031 8.79688 16.75 9.5 16.75C10.1641 16.75 10.75 16.2031 10.75 15.5V13Z' fill='white'/></svg>") no-repeat center / contain;
+                                            }
+                                        }
+                                    }
+                                    .txtBox{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 9px 0;
+                                        b{
+                                            font-size: 14px;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            -webkit-box-orient: vertical;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+                                        p{
+                                            display: flex;
+                                            gap: 0 5px;
+                                            span{
+                                                font-size: 11px;
+                                                line-height: 15px;
+                                                color: #696969;
+                                                &::after{
+                                                    content: '·';
+                                                    margin: 0 0 0 5px;
+                                                }
+                                                &:last-of-type{
+                                                    &::after{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    button{
+                        border: 1px solid #1c1c1c;                    
+                        font-weight: 600;
+                        padding: 10.5px 30px;
+                        border-radius: 30px;
+                        font-size: 14px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // footer
 #footer{
     padding: 40px 0 100px 0;
@@ -2923,6 +3282,7 @@ h3{
 
     // marquee
     .marquee{
+        margin: 128px 0;
         .marqueeBox{
             span{
                 font-size: 85px;
@@ -4826,6 +5186,19 @@ h3{
                                 a{
                                     >div{
                                         gap: 25px 0;
+                                        .imgBox{
+                                            position: relative;
+                                            padding: 120% 0 0 0;
+                                            img{
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
                                         .txtBox{
                                             width: 100%;
                                             gap: 12px 0;
@@ -4976,10 +5349,6 @@ h3{
                         }
                     }
                 }     
-                
-                .marquee{
-                    margin: 128px 0;
-                }
             }
 
             // #cont02
@@ -5015,6 +5384,261 @@ h3{
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // sub0103 두드림 치료컨셉
+    #wrap.sub0103{
+        #section{
+            // cont01
+            #cont01{
+                padding: 128px 0 0 0;
+                .txtBox{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    p{
+                        font-size: 16px;
+                        margin: 15px 0 0 0;
+                    }
+                    h3{
+                        font-size: 36px;
+                        line-height: 50px;
+                        margin: 24px 0 0 0;
+                    }
+                }
+                .imgWrap {
+                    max-width: 1300px;
+                    margin: 102px auto 0;
+                    .imgBox{
+                        max-width: 1300px;
+                        margin: 0 auto;
+                        .img_top_concept_m{
+                            display: none;
+                        }
+                        .img_top_concept{
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            // cont02
+            #cont02{
+                padding: 128px 0 0 0;
+                h3{
+                    font-size: 36px;
+                    line-height: 60px;
+                    font-weight: 700;
+                }
+            }
+
+            // cont03
+            #cont03{
+                padding: 128px 0;
+                max-width: 1300px;
+                margin: 0 auto;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .logo{
+                    width: 800px;
+                    margin: 0 auto;
+                }
+                >h3{
+                    font-size: 36px;
+                    line-height: 60px;
+                    margin: 64px 0 32px;
+                }
+                >p{
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+
+            // cont04
+            #cont04{
+                // max-width: 1300px;
+                // margin: 0 auto;
+                >h3{
+                    font-size: 36px;
+                    line-height: 50px;
+                    max-width: 1300px;
+                    margin: 0 auto;
+                }
+                >p{
+                    font-size: 16px;
+                    max-width: 1300px;
+                    margin: 16px auto 128px;
+                }
+                .cont04Wrap{
+                    display: none;
+                }
+                .cont04WrapPc{
+                    display: block;
+                    ul{
+                        display: flex;
+                        li{
+                            width: calc(100% / 4);
+                            position: relative;
+                            background-color: #797255;
+                            overflow: hidden;
+                            .imgBox{
+                                transition: 0.5s;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .txtBox{
+                                position: absolute;
+                                bottom: -120px;
+                                color: #fff;
+                                padding: 35px 40px;
+                                box-sizing: border-box;
+                                transition: 0.5s;
+                                >div{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    gap: 0 12px;
+                                    margin: 0 0 50px 0;
+                                    .icon{
+                                        width: 95px;
+                                    }
+                                    p{
+                                        width: calc(100% - 100px);
+                                        font-size: 24px;
+                                        font-weight: 500;
+                                        font-family: "Poppins", sans-serif;
+                                        text-transform: uppercase
+                                    }
+                                }
+                                >b{
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    font-size: 36px;
+                                    line-height: 40px;
+                                }
+                                >p{
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    margin: 16px 0 0 0;
+                                    font-weight: 600;
+                                }
+                            }
+                            &:hover{
+                                .imgBox{
+                                    border-radius: 0 0 250px 0;
+                                    overflow: hidden;
+                                }
+                                .txtBox{
+                                    bottom: 50px;
+                                    >b{
+                                        opacity: 1;
+                                    }
+                                    >p{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // #cont05
+            #cont05{
+                padding: 170px 0;
+                .layout{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    display: flex;
+                    .txtBox{
+                        width: 50%;
+                        h5{
+                            font-size: 16px;
+                            line-height: 24px;
+                            &:last-of-type{
+                                margin: 16px 0 0 0;
+                            }
+                        }
+                        h3{
+                            font-size: 36px;
+                            line-height: 50px;
+                        }
+                        .btnMore{
+                            display: inline-flex;
+                            margin: 65px 0 0 0;
+                        }
+                    }
+                    .reviewBox{
+                        width: 50%;
+                        margin: 0;
+                        .btnMore{
+                            display: none;
+                        }
+                        .reviewBoxCont{
+                            gap: 64px 0;
+                            ul{
+                                margin: 0;
+                                gap: 40px 24px;
+                                li{
+                                    width: calc(50% - 12px);
+                                    a{
+                                        >div{
+                                            gap: 25px 0;
+                                            .imgBox{
+                                                position: relative;
+                                                padding: 120% 0 0 0;
+                                                img{
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: cover;
+                                                }
+                                            }
+                                            .txtBox{
+                                                width: 100%;
+                                                gap: 12px 0;
+                                                b{
+                                                    font-size: 18px;
+                                                    line-height: 28px;
+                                                }
+                                                p{
+                                                    span{
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                            .loginBox{
+                                                height: calc(100% - 105px);
+                                                p{
+                                                    font-size: 17px;
+                                                    line-height: 28px;
+                                                    &::before{
+                                                        width: 17px;
+                                                        height: 21px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            button{
+                                font-size: 16px;
+                                padding: 14px 35px;
+                            }
+                        }
+                    }
+                }    
             }
         }
     }
