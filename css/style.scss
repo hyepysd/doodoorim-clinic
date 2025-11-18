@@ -3732,7 +3732,185 @@ h3{
     #section{
         // cont01
         #cont01{
-            
+            padding: 60px 20px;
+            box-sizing: border-box;
+            .titBox{
+
+            }
+            .cont01Wrap{
+                margin: 48px 0 0 0;
+                h5{
+                    font-size: 26px;
+                }
+                ul{
+                    margin: 20px 0 15px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    li{
+                        width: calc(100% / 2 - 5px);
+                        background-color: #F8F8F6;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 5px 0;
+                        padding: 20px 10px;
+                        box-sizing: border-box;
+                        border-radius: 20px;
+                        span{
+                            padding: 5px 9px;
+                            box-sizing: border-box;
+                            font-size: 11px;
+                            line-height: 11px;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            background-color: #797255;
+                            color: #fff;
+                        }
+                        p{
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                >p{
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #696969;
+                    display: flex;
+                    gap: 0 5px;
+                    &::before{
+                        content: '·';
+                    }
+                }
+            }
+        }
+
+        // cont02
+        #cont02{
+            padding: 0 20px;
+            box-sizing: border-box;
+            h5{
+                font-size: 26px;
+                line-height: 36px;
+            }
+            [class ^= "cont02Wrap"]{
+                [class ^= "cont02Box"]{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 24px;
+                    .imgBox{
+                        width: 50%;
+                        position: relative;
+                        padding: 50% 0 0 0;
+                        border-radius: 15px;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                            object-fit: cover;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+                    .txtBox{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px 0;
+                        span{
+                            font-size: 11px;
+                            line-height: 11px;
+                            padding: 6px 8px;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            font-weight: 600;
+                            color: #A76F58;
+                            background-color: #F9DCD3;
+                        }
+                        b{
+                            display: flex;
+                            align-items: flex-end;
+                            gap: 0 3px;
+                            font-size: 20px;
+                            p{
+                                font-size: 10px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+                .scheduleBox{
+                    width: 100%;
+                    margin: 24px 0 0 0;
+                    table{
+                        width: 100%;
+                        tr{
+                            font-size: 12px;
+                            line-height: 12px;
+                            border-left: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            box-sizing: border-box;
+                            height: 48px;
+                            display: flex;
+                            &:nth-of-type(1){
+                                border: none;
+                                height: auto;
+                            }
+                            &:nth-of-type(3){
+                                border-radius: 0 0 10px 10px;
+                            }
+                            th{
+                                width: calc(100% / 7);
+                                background-color: #797255;
+                                color: #fff;
+                                font-weight: 700;
+                                padding: 12px 0;
+                                box-sizing: border-box;
+                                &:first-of-type{
+                                    border-radius: 10px 0 0 0;
+                                }
+                                &:last-of-type{
+                                    border-radius: 0 10px 0 0;
+                                }
+                            }
+                            td{
+                                width: calc(100% / 7);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &:first-of-type{
+                                    border-right: 1px solid #ddd;
+                                    box-sizing: border-box;
+                                    font-weight: 700;
+                                    color: #1C1C1C;
+                                }
+                            }
+                            .scheduleOn{
+                                span{
+                                    color: #fff;
+                                    font-size: 11px;
+                                    padding: 5px 9px;
+                                    border-radius: 15px;
+                                    background-color: #797255;
+                                }
+                            }
+                            .scheduleOff{
+                                span{
+                                    color: #fff;
+                                    font-size: 11px;
+                                    padding: 5px 9px;
+                                    border-radius: 15px;
+                                    background-color: #A76F58;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont02Wrap01{
+                margin: 24px 0 45px 0;
+            }
         }
     }
 }
@@ -5449,32 +5627,34 @@ h3{
                     font-size: 17px;
                 }
             }
-            .lnb{
-                max-width: 1300px;
-                margin: 0 auto;
-                padding: 40px 20px 0;
-                gap: 0 28px;                
-                >li{
-                    cursor: pointer;
-                    &::after{
-                        height: 14px;
-                    }
-                    p{
-                        font-size: 14px;
-                    }
-                }
-                .iconHome{
-                    p{
-                        width: 13px;
-                        height: 12px;
-                    }
-                }
-                [class^=subDepth]{
-                    p{
-                        gap: 0 10px;
+            .subTop{
+                .lnb{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    padding: 40px 20px 0;
+                    gap: 0 28px;                
+                    >li{
+                        cursor: pointer;
                         &::after{
-                            width: 14px;
                             height: 14px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .iconHome{
+                        p{
+                            width: 13px;
+                            height: 12px;
+                        }
+                    }
+                    [class^=subDepth]{
+                        p{
+                            gap: 0 10px;
+                            &::after{
+                                width: 14px;
+                                height: 14px;
+                            }
                         }
                     }
                 }
@@ -6914,6 +7094,118 @@ h3{
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // sub0501 진료 안내
+    #wrap.sub0501{
+        #section{
+            // cont01
+            #cont01{
+                padding: 125px 0;
+                .cont01Wrap{
+                    max-width: 1300px;
+                    margin: 80px auto 0;
+                    h5{
+                        font-size: 36px;
+                        line-height: 42px;
+                    }
+                    ul{
+                        margin: 35px 0 20px 0;
+                        gap: 0 12px;
+                        li{
+                            width: calc(100% / 4 - 9px);
+                            gap: 7px 0;
+                            padding: 50px 8px;
+                            span{
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 28px;
+                                line-height: 36px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            // cont02
+            #cont02{
+                max-width: 1300px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px 58px;
+                h5{
+                    width: 100%;
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                [class^=cont02Wrap]{
+                    [class^=cont02Box]{
+                        gap: 0 50px;
+                        .txtBox{
+                            gap: 12px 0;
+                            span{
+                                font-size: 14px;
+                                line-height: 16px;
+                                padding: 8px 12px;
+                            }
+                            b{
+                                font-size: 30px;
+                                line-height: 34px;
+                                gap: 0 7px;
+                                p{
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                    }
+                    .scheduleBox{
+                        margin: 32px 0 0 0;
+                        table{
+                            tr{
+                                height: 64px;
+                                th{
+                                    font-size: 14px;
+                                    padding: 14px 0;
+                                }
+                                td{
+                                    font-size: 16px;
+                                }
+                                .scheduleOff{
+                                    span{
+                                        font-size: 14px;
+                                        padding: 8px 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .scheduleOn{
+                                    span{
+                                        font-size: 14px;
+                                        padding: 8px 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .cont02Wrap01{
+                    width: calc(100% / 2 - 29px);
+                    margin: 0;
+                }
+                .cont02Wrap02{
+                    width: calc(100% / 2 - 29px);
+                }
+
             }
         }
     }
