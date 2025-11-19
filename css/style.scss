@@ -3916,6 +3916,116 @@ h3{
 }
 
 
+// sub0501 영양수액
+#wrap.sub0502{
+    #section{
+        // cont01
+        #cont01{
+            padding: 60px 20px;
+            box-sizing: border-box;
+            .cont01Wrap{
+                margin: 30px 0 0 0;
+                .cont01Box{
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .imgBox{
+                        height: 160px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            position: relative;
+                            bottom: 100px;
+                        }
+                    }
+                    .txtBox{
+                        background-color: #f6f6f6;
+                        padding: 20px 20px 30px;
+                        box-sizing: border-box;
+                        strong{
+                            display: block;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        b{
+                            font-size: 15px;
+                            font-weight: 600;
+                            margin: 12px 0 9px;
+                            display: block;
+                        }
+                        p{
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                        .hastag{
+                            display: flex;
+                            gap: 5px;
+                            flex-wrap: wrap;
+                            margin: 15px 0 0 0;
+                            p{
+                                background-color: #fff;
+                                font-size: 11px;
+                                line-height: 11px;
+                                padding: 5px 8px;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // cont02
+        #cont02{
+            padding: 80px 0;
+            box-sizing: border-box;
+            .titBox{
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            .cont02Wrap{
+                margin: 25px 0 0 0;
+                padding: 0 20px;
+                box-sizing: border-box;
+                .swiper-wrapper{
+                    .cont02Box{
+                        .imgBox{
+                            border-radius: 20px;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .txtBox{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px 0;
+                            margin: 20px 0 0 0;
+                            b{
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 15px;
+                                line-height: 24px;
+                                color: #696969;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    position: unset;
+                    margin: 35px 0 0 0;
+                    height: 3px;
+                    background-color: rgba(121,114,85,0.5);
+                    .swiper-pagination-progressbar-fill{
+                        background-color: #a76f58;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // footer
 #footer{
     padding: 40px 0 100px 0;
@@ -5665,9 +5775,12 @@ h3{
                 padding: 128px 50px;
                 strong{
                     font-size: 36px;
-                    margin: 0 0 50px 0;
+                    max-width: 1300px;
+                    margin: 0 auto 50px;
                 }
                 .cont05Wrap{
+                    max-width: 1300px;
+                    margin: 0 auto;
                     flex-direction: row;
                     justify-content: space-between;
                     .cont05Box01{
@@ -7206,6 +7319,111 @@ h3{
                     width: calc(100% / 2 - 29px);
                 }
 
+            }
+        }
+    }
+
+    // sub0501 영양수액
+    #wrap.sub0502{
+        #section{
+            // cont01
+            #cont01{
+                max-width: 1300px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .titBox{
+                    max-width: unset;
+                    margin: 0;
+                    position: sticky;
+                    top: 100px;
+                }
+                .cont01Wrap{
+                    width: 70%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px 0;
+                    .cont01Box{
+                        display: flex;
+                        .imgBox{
+                            width: 250px;
+                            height: auto;
+                            img{
+                                height: 100%;
+                                object-fit: cover;
+                                bottom: unset;
+                            }
+                        }
+                        .txtBox{
+                            width: calc(100% - 250px);
+                            padding: 45px 17px 45px 38px;
+                            strong{
+                                font-size: 32px;
+                                line-height: 38px;
+                            }
+                            b{
+                                font-size: 18px;
+                                line-height: 24px;
+                                margin: 17px 0 12px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                            .hastag{
+                                gap: 0 7px;
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // cont02
+            #cont02{
+                .titBox{
+                }
+                .cont02Wrap{
+                    margin: 35px 0 0 calc(50% - 650px);
+                    padding: 0 20px;
+                    .swiper-wrapper{
+                        .cont02Box{
+                            display: flex;
+                            align-items: center;
+                            gap: 0 68px;
+                            .imgBox{
+                                width: 50%;
+                            }
+                            .txtBox{
+                                width: calc(100% - 50% - 68px);
+                                gap: 32px 0;
+                                margin: 0;
+                                opacity: 0;
+                                transition: 0.5s;
+                                b{
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                }
+                                p{
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                        .swiper-slide-active{
+                            .txtBox{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .swiper-pagination{
+                        width: 95%;
+                        margin: 50px 0 0 0;
+                    }
+                }
             }
         }
     }
