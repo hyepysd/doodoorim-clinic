@@ -4747,6 +4747,330 @@ h3{
     }
 }
 
+// sub0603 자가테스트
+#wrap.sub0603{
+    #section{
+        // cont01
+        #cont01{
+            padding: 60px 20px;
+            box-sizing: border-box;
+            .cont01Box{
+                background-color: #797255;
+                color: #fff;
+                text-align: center;
+                padding: 60px 20px;
+                box-sizing: border-box;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px 0;
+                b{
+                    font-size: 26px;
+                    line-height: 38px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 15px;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        // cont02
+        #cont02{
+            padding: 80px 0;
+            box-sizing: border-box;
+            background: linear-gradient(0deg,rgba(248, 248, 246, 0) 0%, rgba(248, 248, 246, 1) 100%);
+            >[class ^= "cont02Box0"]{
+                padding: 0 20px;
+                box-sizing: border-box;
+                >.txtBox{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 0 9px;
+                    span{
+                        background-color: #797255;
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 700;
+                        box-sizing: border-box;
+                        width: 75px;
+                        height: 30px;
+                        margin: 5px 0 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                    }
+                    p{
+                        width: calc(100% - 84px);
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 600;
+                    }
+                }
+                >[class ^= "cont02Box"]{
+                    margin: 25px 0 0 0;
+                    padding: 0 0 60px 0;
+                    box-sizing: border-box;
+                    position: relative;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .imgCont{ 
+                        font-size: 0;   
+                        position: relative;
+                        padding: 100% 0 0 0;
+                        box-sizing: border-box;
+                        >div{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: 0.5s;                            
+                            &.active{
+                                opacity: 1;
+                            }
+                            
+                        }
+                    }
+                    .txtBox{
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0px;
+                        overflow-x: scroll;        
+                        scrollbar-width: none;
+                        -ms-overflow-style: none;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        background-color: #b5a693;
+                        .txtCont{
+                            width: max-content;
+                            display: flex;
+                            gap: 0 5px;
+                            div{
+                                padding: 14px 56px 14px 14px;
+                                box-sizing: border-box;
+                                border-radius: 10px;
+                                background-color: #fff;
+                                transition: 0.5s;
+                                position: relative;
+                                &::after{
+                                    content: '';
+                                    width: 21px;
+                                    height: 21px;
+                                    background: url("data:image/svg+xml,%3Csvg width='32' height='31' viewBox='0 0 32 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 30.75C10.6094 30.75 5.6875 27.9375 2.99219 23.25C0.296875 18.6211 0.296875 12.9375 2.99219 8.25C5.6875 3.62109 10.6094 0.75 16 0.75C21.332 0.75 26.2539 3.62109 28.9492 8.25C31.6445 12.9375 31.6445 18.6211 28.9492 23.25C26.2539 27.9375 21.332 30.75 16 30.75ZM22.6211 12.9961H22.5625C23.1484 12.4688 23.1484 11.5898 22.5625 11.0039C22.0352 10.4766 21.1562 10.4766 20.6289 11.0039L14.125 17.5664L11.3711 14.8125C10.7852 14.2266 9.90625 14.2266 9.37891 14.8125C8.79297 15.3398 8.79297 16.2188 9.37891 16.7461L13.1289 20.4961C13.6562 21.082 14.5352 21.082 15.1211 20.4961L22.6211 12.9961Z' fill='%231C1C1C'/%3E%3C/svg%3E") no-repeat 50% 50% / contain;
+                                    background-repeat: no-repeat;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 10px;
+                                    transform: translateY(-50%);
+                                    transition: 0.5s;
+                                }
+                                b{
+                                    font-size: 17px;
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                                &.active{
+                                    background-color: #1c1c1c;
+                                    &::after{
+                                        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='31' viewBox='0 0 32 31' fill='none'><path d='M16 30.75C10.6094 30.75 5.6875 27.9375 2.99219 23.25C0.296875 18.6211 0.296875 12.9375 2.99219 8.25C5.6875 3.62109 10.6094 0.75 16 0.75C21.332 0.75 26.2539 3.62109 28.9492 8.25C31.6445 12.9375 31.6445 18.6211 28.9492 23.25C26.2539 27.9375 21.332 30.75 16 30.75ZM22.6211 12.9961H22.5625C23.1484 12.4688 23.1484 11.5898 22.5625 11.0039C22.0352 10.4766 21.1562 10.4766 20.6289 11.0039L14.125 17.5664L11.3711 14.8125C10.7852 14.2266 9.90625 14.2266 9.37891 14.8125C8.79297 15.3398 8.79297 16.2188 9.37891 16.7461L13.1289 20.4961C13.6562 21.082 14.5352 21.082 15.1211 20.4961L22.6211 12.9961Z' fill='white'/></svg>");
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                    }
+                                    b, p{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                            
+                    }
+                }
+                .cont02Box0101{
+                    .imgCont{
+                        >div{
+                            &:nth-of-type(1){
+                                background: url(../img/selftest1_1.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(2){
+                                background: url(../img/selftest1_2.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(3){
+                                background: url(../img/selftest1_3.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(4){
+                                background: url(../img/selftest1_4.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(5){
+                                background: url(../img/selftest1_5.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                        }
+                    }
+                }
+                .cont02Box0201{
+                    .imgCont{
+                        >div{
+                            &:nth-of-type(1){
+                                background: url(../img/selftest2_1.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(2){
+                                background: url(../img/selftest2_2.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(3){
+                                background: url(../img/selftest2_3.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                            &:nth-of-type(4){
+                                background: url(../img/selftest2_4.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: -100px 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .cont02Box02{
+                margin: 100px 0 0 0;
+                .cont02Box0201{
+                    .txtBox{
+                        .txtCont{
+                            width: max-content;
+                        }
+                    }
+                }
+            }
+            >.btnSubmit{
+                background-color: #1c1c1c;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: bold;
+                margin: 80px auto 0;
+                padding: 16px 30px;
+                box-sizing: border-box;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+// sub0604 자가테스트 결과
+#wrap.sub0604{
+    #section{
+        // cont01
+        #cont01{
+            padding: 80px 20px;
+            box-sizing: border-box;
+            h3{
+                font-size: 26px;
+                line-height: 34px;
+                text-align: center;
+            }
+            .cont01Wrap{
+                margin: 50px 0 0 0;
+                background-color: #F8F8F6;
+                .imgBox{
+                    border-radius: 15px 15px 0 0;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .txtBox{
+                    padding: 35px 15px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    .topTxt{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 15px 0;
+                        margin: 0 0 25px 0;
+                        b{
+                            font-size: 15px;
+                            line-height: 15px;
+                            background-color: #797255;
+                            padding: 7px 8px;
+                            box-sizing: border-box;
+                            color: #fff;
+                            border-radius: 5px;
+                            display: flex;
+                        }
+                        strong{
+                            font-size: 26px;
+                            font-weight: 700;
+                        }
+                    }
+                    >b{
+                        font-size: 18px;
+                        line-height: 26px;
+                        display: block;
+                        margin: 0 0 10px 0;
+                        .num{
+                            color: #797255;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .btnWrap{
+                display: flex;
+                justify-content: center;
+                gap: 0 10px;
+                margin: 50px 0 0 0;
+                .btnRetry,
+                .btnClinic{
+                   display: inline-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0 18px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 700;
+                    border: 1px solid #1C1C1C;
+                    padding: 15px 30px;
+                    box-sizing: border-box;
+                    border-radius: 30px; 
+                }
+                .btnClinic{
+                    background-color: #1c1c1c;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
 
 
 // footer
@@ -8472,6 +8796,140 @@ h3{
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // sub0603 자가테스트
+    #wrap.sub0603{
+        #section{
+            // cont01
+            #cont01{
+                max-width: 1300px;
+                margin: 0 auto;
+                .cont01Box{
+                    max-width: 1260px;
+                    margin: 0 auto;
+                    padding: 80px 60px;
+                    b{
+                        font-size: 36px;
+                        line-height: 52px;
+                    }
+                    p{
+                        font-size: 17px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            // cont02
+            #cont02{
+                >[class ^= "cont02Box0"]{
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    .txtBox{
+                        gap: 0 13px;
+                        span{
+                            font-size: 18px;
+                            width: 100px;
+                            height: 36px;
+                            padding: 4px 13px;
+                            margin: 0;
+                        }
+                        p{
+                            font-size: 32px;
+                            line-height: 37px;
+                        }
+                    }
+                    >[class ^= "cont02Box"]{
+                        margin: 35px 0 0 0;
+                        padding: 0;
+                        .imgCont{
+                            padding: 45% 0 0 0;
+                            div{
+                                background-position: 0px 0px !important;
+                            }
+                        }
+                        .txtBox{
+                            width: 450px;
+                            bottom: unset;
+                            top: 50%;
+                            right: 70px;
+                            transform: translateY(-50%);
+                            background-color: transparent;
+                            padding: 0;
+                            .txtCont{
+                                width: 100%;
+                                flex-direction: column;
+                                gap: 15px 0;
+                                >div{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0 10px;
+                                    padding: 16px 25px;
+                                    cursor: pointer;
+                                    b{
+                                        font-size: 22px;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .cont02Box02{
+                    margin: 170px auto 0;
+                }
+            }
+        }
+    }
+
+    // sub0604 자가테스트 결과
+    #wrap.sub0604{
+        #section{
+            // cont01
+            #cont01{
+                max-width: 1300px;
+                margin: 0 auto;
+                h3{
+                    font-size: 36px;
+                    line-height: 50px;
+                }
+                .cont01Wrap{
+                    max-width: 720px;
+                    margin: 65px auto 0;
+                    .txtBox{
+                        .topTxt{
+                            margin: 0 0 32px 0;
+                            b{
+                                font-size: 17px;
+                            }
+                            strong{
+                                font-size: 36px;
+                                line-height: 42px;
+                            }
+                        }
+                        >b{
+                            font-size: 17px;
+                            line-height: 24px;
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .btnWrap{
+                    margin: 65px 0 0 0;
+                    gap: 0 15px;
+                    .btnRetry,
+                    .btnClinic{
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
